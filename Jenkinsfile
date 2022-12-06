@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('clone Reepository & clean ') { 
             steps {
+		sh "printenv"
                 sh "mvn clean compile"
             }
         }
